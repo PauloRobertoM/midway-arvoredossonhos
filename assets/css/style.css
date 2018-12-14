@@ -1,0 +1,481 @@
+* {
+    outline: none;
+}
+a,
+button {
+    text-decoration: none!important;
+    cursor: pointer!important;
+    transition: 1s;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.container {
+    max-width: 1200px!important;
+    width: 100%;
+}
+.titulo-geral {
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.titulo-geral::after {
+    content: "";
+    display: block;
+    width: 121px;
+    height: 7px;
+    background: url('../images/borda.png') no-repeat;
+    margin: 5px auto 0;
+}
+
+.topo {
+    text-align: center;
+    background: url('../images/background-topo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 1892px;
+    padding-top: 370px;
+}
+.topo .logo img {
+    margin-bottom: 130px;
+}
+
+.seja-padrinho h1 {
+    margin-bottom: 10px;
+}
+#owl-sonho {
+    padding: 0 60px;
+}
+#owl-sonho .owl-stage-outer {
+    padding: 80px 0;
+}
+#owl-sonho img {
+    width: 96%;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto;
+    transition: 1s;
+}
+#owl-sonho .conteudo {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 30px 20px 60px;
+    transition: 1s;
+}
+#owl-sonho h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #a24691;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+#owl-sonho p {
+    font-size: 16px;
+    color: #545454;
+    text-align: center;
+    margin: 0;
+}
+#owl-sonho .link {
+    display: flex;
+    justify-content: center;
+}
+#owl-sonho .conteudo span {
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: #a24691;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    transition: 1s;
+}
+#owl-sonho a:hover span {
+    background: #e57c08;
+}
+#owl-sonho a:hover img {
+    height: 300px;
+    margin-top: -20px;
+}
+#owl-sonho a:hover .conteudo {
+    padding-bottom: 80px;
+}
+.owl-next,
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    transition: 1s;
+}
+.owl-next {
+    right: 0px;
+}
+.owl-prev {
+    left: 0px;
+}
+.owl-next img,
+.owl-prev img {
+    width: 55px!important;
+    height: 55px!important;
+    transition: 1s;
+}
+.owl-next:hover img,
+.owl-prev:hover img {
+    width: 60px!important;
+    height: 60px!important;
+}
+
+.empresa {
+    margin: 100px 60px 0;
+    background: url('../images/back-empresa.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.empresa h1 {
+    font-size: 35px;
+}
+.empresa .btn {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    display: table;
+    background: #e8af13;
+    padding: 10px 100px;
+    border-radius: 50px;
+    margin: 50px auto 0;
+}
+.empresa .btn:hover {
+    background: #c19313;
+}
+.empresa .conteudo {
+    padding: 30px 150px 0;
+    display: none;
+}
+.empresa p {
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.empresa input {
+    font-size: 20px;
+    color: #686868;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 30px;
+}
+.empresa .fechar {
+    font-size: 45px;
+    font-weight: bold;
+    color: #e8af13;
+    text-transform: uppercase;
+    float: right;
+    margin-right: -110px;
+    margin-top: -10px;
+}
+
+.apoio {
+    text-align: center;
+    background: url('../images/background-footer.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 545px;
+    display: flex;
+    align-items: center;
+}
+.apoio h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #a24691;
+    text-transform: uppercase;
+    margin: 130px 0 70px;
+}
+#owl-apoio {
+    padding: 0 60px;
+}
+.apoio img {
+    height: 90px!important;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    max-width: 1030px;
+    width: 100%;
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.modal-body {
+    position: relative;
+    padding: 0;
+}
+.modal .item {
+    width: 50%;
+    float: left;
+}
+.modal .item:nth-child(1) img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+    object-position: center;
+}
+.modal .item:nth-child(2) {
+    padding: 80px 50px;
+    background: #96bd13;
+    height: 660px;
+}
+.modal h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 20px;
+}
+.modal form {
+    margin-top: 40px;
+}
+.modal .close {
+    position: absolute;
+    font-size: 60px;
+    color: #a24691;
+    text-shadow: none;
+    opacity: 1;
+    right: 15px;
+    top: 0;
+}
+.modal input[type="text"] {
+    font-size: 20px;
+    color: #686868;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 30px;
+}
+.modal input[type="checkbox"] {
+    display: none;
+}
+.modal input[type="checkbox"] + label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    position: relative;
+    margin: 30px 0;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.modal input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+}
+.modal input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    border-radius: 2px;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+.modal input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: 0;
+    left: 5px;
+    border-radius: 0;
+    background: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #f05228;
+    border-right-color: #f05228;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.modal .btn-modal {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    display: table;
+    float: right;
+    background: #a24691;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+}
+.modal .btn-modal:hover {
+    background: #753469;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 767px) {
+    .topo {
+        min-height: auto;
+        padding-top: 150px;
+        margin-bottom: -1px;
+    }
+    .topo .logo img {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .titulo-geral {
+        font-size: 24px;
+    }
+    .titulo-geral::after {
+        width: 90px;
+        height: 5px;
+        margin: 2px auto 0;
+    }
+    #owl-sonho {
+        padding: 0;
+    }
+    #owl-sonho .owl-stage-outer {
+        padding: 20px 0 30px;
+    }
+    .owl-nav {
+        display: none;
+    }
+    #owl-sonho img {
+        height: 250px;
+    }
+    #owl-sonho .conteudo {
+        padding: 10px 10px 30px;
+    }
+    #owl-sonho .conteudo span {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        bottom: -25px;
+    }
+    #owl-sonho h2 {
+        font-size: 20px;
+    }
+    #owl-sonho p {
+        font-size: 14px;
+    }
+    .empresa {
+        margin: 30px 0px 0;
+        padding: 30px 0;
+    }
+    .empresa h1 {
+        font-size: 16px;
+    }
+    .empresa .btn {
+        font-size: 16px;
+        padding: 10px 40px;
+        margin: 30px auto 0;
+    }
+    .empresa .conteudo {
+        padding: 40px 10px 0;
+    }
+    .empresa .fechar {
+        font-size: 40px;
+        margin-right: 0;
+        margin-top: -50px;
+        margin-bottom: 0;
+        position: absolute;
+        right: 46%;
+    }
+    .empresa p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .empresa input {
+        font-size: 16px;
+        height: 35px;
+        margin-bottom: 15px;
+        padding-left: 20px;
+    }
+    .empresa form .btn {
+        margin: 0 auto 0!important;
+    }
+    .apoio {
+        height: 350px;
+    }
+    .apoio h2 {
+        margin: 100px 0 30px;
+    }
+    .modal-dialog {
+        width: auto;
+    }
+    .modal .item {
+        width: 100%;
+        float: none;
+    }
+    .modal .item:nth-child(1) img {
+        height: 300px;
+    }
+    .modal .item:nth-child(2) {
+        padding: 20px 15px 70px;
+        height: auto;
+    }
+    .modal h2 {
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    .modal form {
+        margin-top: 20px;
+    }
+    .modal input[type="text"] {
+        font-size: 16px;
+        height: 35px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    .modal input[type="checkbox"] + label {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    .modal .btn-modal {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .empresa .conteudo {
+        padding: 30px 80px 0;
+    }
+    .empresa .fechar {
+        margin-right: -50px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+}
